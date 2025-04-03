@@ -1,0 +1,12 @@
+name: Status checks
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tests
+        run: |
+          echo "Running tests..."
+          # Simulate a test failure
+          exit 1
